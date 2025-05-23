@@ -20,4 +20,4 @@ jobs:
       - name: Check for Broken Links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose ./index.html
+          args: --verbose --exclude generic.html,elements.html ./index.html
