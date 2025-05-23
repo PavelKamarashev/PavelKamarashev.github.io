@@ -143,3 +143,4 @@
 			});
 
 })(jQuery);
+// This is a JavaScript file for the website PavelKamarashev.github.io

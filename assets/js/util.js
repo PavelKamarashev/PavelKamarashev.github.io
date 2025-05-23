@@ -585,3 +585,4 @@
 	};
 
 })(jQuery);
+// End of util.js
