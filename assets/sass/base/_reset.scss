@@ -42,8 +42,8 @@
 	blockquote,	q {
 		quotes: none;
 
-		&:before,
-		&:after {
+		&::before,
+		&::after {
 			content: '';
 			content: none;
 		}
@@ -55,7 +55,7 @@
 	}
 
 	body {
-		-webkit-text-size-adjust: none;
+		text-size-adjust: none;
 	}
 
 	mark {
@@ -69,8 +69,8 @@
 	}
 
 	input, select, textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
+		appearance: none;
+		appearance: none;
+		appearance: none;
 		appearance: none;
 	}

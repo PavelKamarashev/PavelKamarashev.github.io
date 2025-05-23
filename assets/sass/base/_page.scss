@@ -7,7 +7,7 @@
 /* Basic */
 
 	// MSIE: Required for IEMobile.
-		@-ms-viewport {
+		@viewport {
 			width: device-width;
 		}
 
@@ -29,28 +29,24 @@
 			box-sizing: border-box;
 		}
 
-		*, *:before, *:after {
+		*, *::before, *::after {
 			box-sizing: inherit;
 		}
 
 	body {
 		background-color:		_palette(bg);
-
 		background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
 								url('../../images/bg.jpg');
-
 		background-size:		auto,
 								cover;
-
 		background-attachment:	fixed,
 								fixed;
-
 		background-position:	center,
 								center;
 
 		// Stops initial animations until page loads.
 			&.is-preload {
-				*, *:before, *:after {
+				*, *::before, *::after {
 					@include vendor('animation', 'none !important');
 					@include vendor('transition', 'none !important');
 				}

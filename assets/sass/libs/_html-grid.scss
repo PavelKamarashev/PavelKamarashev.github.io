@@ -6,7 +6,6 @@
 	/// @param {mixed} $gutters Gutters (either a single number to set both column/row gutters, or a list to set them individually).
 	/// @param {mixed} $suffix Column class suffix (optional; either a single suffix or a list).
 	@mixin html-grid($gutters: 1.5em, $suffix: '') {
-
 		// Initialize.
 			$cols: 12;
 			$multipliers: 0, 0.25, 0.5, 1, 1.50, 2.00;
@@ -15,10 +14,9 @@
 			// Suffixes.
 				$suffixes: null;
 
-				@if (type-of($suffix) == 'list') {
+				@if type-of($suffix) == 'list' {
 					$suffixes: $suffix;
-				}
-				@else {
+				} @else {
 					$suffixes: ($suffix);
 				}
 
@@ -26,14 +24,11 @@
 				$guttersCols: null;
 				$guttersRows: null;
 
-				@if (type-of($gutters) == 'list') {
-
+				@if type-of($gutters) == 'list' {
 					$guttersCols: nth($gutters, 1);
 					$guttersRows: nth($gutters, 2);
 
-				}
-				@else {
-
+				} @else {
 					$guttersCols: $gutters;
 					$guttersRows: 0;
 
@@ -86,12 +81,10 @@
 
 		// Step through suffixes.
 			@each $suffix in $suffixes {
-
 				// Suffix.
-					@if ($suffix != '') {
+					@if $suffix != '' {
 						$suffix: '-' + $suffix;
-					}
-					@else {
+					} @else {
 						$suffix: '';
 					}
 
@@ -115,11 +108,10 @@
 
 					// Step through multipliers.
 						@each $multiplier in $multipliers {
-
 							// Gutters.
 								$class: null;
 
-								@if ($multiplier != 1) {
+								@if $multiplier != 1 {
 									$class: '.gtr-' + ($multiplier * 100);
 								}
 

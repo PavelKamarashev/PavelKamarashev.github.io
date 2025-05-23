@@ -12,6 +12,7 @@
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 			@include vendor('flex-wrap', 'wrap');
+
 			margin: 0 auto;
 			width: _size(inner);
 
@@ -31,8 +32,8 @@
 			.copyright {
 				border-top: solid 2px _palette(border);
 				list-style: none;
-				margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
-				padding: _size(element-margin) 0 0 0;
+				margin: (_size(element-margin) * 2) 0 _size(element-margin);
+				padding: _size(element-margin) 0 0;
 				width: 100%;
 
 				li {
@@ -59,18 +60,13 @@
 		}
 
 		@include breakpoint('<=large') {
-
 			background-color:		_palette(bg);
-
 			background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
 									url('../../images/bg.jpg');
-
 			background-size:		auto,
 									cover;
-
 			background-position:	center,
 									center;
-
 		 	margin-top: (_size(wrapper-edges, large) * -1);
 		 	padding-top: _size(wrapper-edges, large);
 
@@ -82,21 +78,22 @@
 
 			.inner {
 				@include padding(3em, 3em);
+
 				display: block;
 				width: 100%;
 
 				form {
 					width: 100%;
-					margin: 0 0 (_size(element-margin) * 2) 0;
+					margin: 0 0 (_size(element-margin) * 2);
 				}
 
 				.contact {
 					width: 100%;
-					margin: 0 0 (_size(element-margin) * 2) 0;
+					margin: 0 0 (_size(element-margin) * 2);
 				}
 
 				.copyright {
-					margin: (_size(element-margin) * 2) 0 _size(element-margin) 0;
+					margin: (_size(element-margin) * 2) 0 _size(element-margin);
 				}
 			}
 		}
@@ -109,11 +106,11 @@
 				@include padding(2em, 2em);
 
 				form {
-					margin: 0 0 (_size(element-margin) * 1.5) 0;
+					margin: 0 0 (_size(element-margin) * 1.5);
 				}
 
 				.contact {
-					margin: 0 0 (_size(element-margin) * 1.5) 0;
+					margin: 0 0 (_size(element-margin) * 1.5);
 				}
 			}
 		}
@@ -124,7 +121,7 @@
 					li {
 						border-left: 0;
 						display: block;
-						margin: 1em 0 0 0;
+						margin: 1em 0 0;
 						padding-left: 0;
 
 						&:first-child {
