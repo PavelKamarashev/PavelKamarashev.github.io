@@ -1,5 +1,7 @@
 # Pavel Kamarashev – DevOps Portfolio
 
+![CI](https://github.com/PavelKamarashev/PavelKamarashev.github.io/actions/workflows/ci.yml/badge.svg)
+
 This is my personal DevOps & Cybersecurity portfolio, built with:
 - GitHub Pages
 - HTML5 UP (Solid State theme)
