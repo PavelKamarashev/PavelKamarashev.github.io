@@ -8,7 +8,7 @@ This is my personal DevOps & Cybersecurity portfolio, built with:
 - CI/CD automation via GitHub Actions
 - HTML & link linting using Super-Linter and Lychee
 
-🚀 Live site: [https://pavelkamarashev.github.io](https://pavelkamarashev.github.io)
+🚀 Live site: www.greyops.site
 
 ## Sections Included
 - About Me
